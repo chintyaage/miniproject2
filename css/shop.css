@@ -1,0 +1,160 @@
+:root{
+    --biruSatu: #041657;
+    --biruDua: #1C519B;
+    --biruTiga: #2d71d1;
+    --biruEmpat: #DAFFF4;
+    --biruLima:#75d5f6;
+    --hijauMuda: #BBEEE7;
+    --orange: #EE5D00;
+    --star: #ffe100;
+    --light: #F9F9F9;
+	--blue: #3C91E6;
+	--light-blue: #CFE8FF;
+	--grey: #eee;
+	--dark-grey: #AAAAAA;
+	--red: #DB504A;
+	--yellow: #FFCE26;
+	--light-yellow: #FFF2C6;
+	--light-orange: #FFE0D3;
+}
+
+body{
+    background: linear-gradient(0deg, rgba(218,255,244,1) 0%, rgba(42,184,253,1) 100%);
+    background-attachment: fixed;
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+/* NAVBAR */
+
+.navbar{
+    backdrop-filter: blur(3px);
+}
+
+#btnNavbar .nav-link::after{
+    content: '';
+    display: block;
+    border-bottom: 0.1rem solid var(--biruSatu);
+    transform: scaleX(0);
+    transition: 0.2s linear;
+}
+
+#btnNavbar .nav-link:hover::after{
+    transform: scaleX(0.6);
+}
+
+#login{
+    width: 100px;
+    background-color: var(--biruSatu);
+    color: white;
+}
+
+#login:hover{
+    background-color: var(--biruDua);
+    transition: 0.3s linear;
+}
+
+.cart{
+    width: 30px;
+    height: 30px;
+    color: var(--biruSatu);
+    fill: none;
+}
+.btn-cart{
+    width: 70px;
+    border: none;
+    background-color: transparent;
+}
+
+.cart > span{
+    width: 25px;
+    height: 25px;
+    background-color: var(--hijauMuda);
+    color: var(--biruSatu);
+    border-radius: 50%;
+    align-items: center;
+}
+
+#cart_count{
+    text-align: center;
+    padding: 0 0.9rem 0.1rem 0,9rem;
+    border-radius: 3rem;
+}
+
+/* INFO USER */
+
+#informasi_user{
+    height: 300px;
+}
+
+.info-user{
+    width: 55%;
+    height: 10px;
+}
+
+.info-user>.card{
+    border: none;
+    border-radius: 30px;
+}
+
+.selamat-datang{
+    font-size:xx-large;
+    color: var(--biruSatu);
+}
+
+.card{
+    background-color: transparent;
+}
+
+.logout{
+    background-color: var(--biruDua);
+    width: 100px;
+    border: none;
+}
+
+/* SHOP */
+
+.title-shop{
+    color: var(--orange);
+    font-weight: bolder;
+    border-bottom: 0.09rem solid var(--biruSatu);
+}
+
+.rev-star{
+    font-size: 10px;
+    color: var(--star);
+}
+
+.price{
+    color: var(--orange);
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+.stock{
+    font-size: 12px;
+    color: grey;
+}
+
+.card-body{
+    background-color: white;
+    border-radius: 10px;
+    padding-top: 100rem;
+}
+
+.card-body>button{
+    font-size: 10px;
+    background-color: var(--hijauMuda);
+    border-radius: 15px;
+}
+
+.card-body>button:hover{
+    background-color: var(--biruEmpat);
+}
+
+.product{
+    border-radius: 50%;
+    border: 6px solid white ;
+    margin-bottom: -3rem;
+}

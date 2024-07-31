@@ -1,0 +1,122 @@
+:root{
+    --biruSatu: #041657;
+    --biruDua: #1C519B;
+    --biruTiga: #2d71d1;
+    --biruEmpat: #DAFFF4;
+    --biruLima:#75d5f6;
+    --hijauMuda: #BBEEE7;
+    --orange: #EE5D00;
+    --star: #ffe100;
+}
+
+body{
+    background-color: var(--biruLima);
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    box-sizing: border-box;
+    padding-top: 5rem;
+}
+
+/* NAVBAR */
+
+.navbar{
+    backdrop-filter: blur(3px);
+}
+
+#btnNavbar .nav-link::after{
+    content: '';
+    display: block;
+    border-bottom: 0.1rem solid var(--biruSatu);
+    transform: scaleX(0);
+    transition: 0.2s linear;
+}
+
+#btnNavbar .nav-link:hover::after{
+    transform: scaleX(0.6);
+}
+
+#login{
+    width: 100px;
+    background-color: var(--biruSatu);
+    color: white;
+}
+
+#login:hover{
+    background-color: var(--biruDua);
+    transition: 0.3s linear;
+}
+
+.cart{
+    width: 30px;
+    height: 30px;
+    color: var(--biruSatu);
+    fill: none;
+}
+.btn-cart{
+    width: 70px;
+    border: none;
+    background-color: transparent;
+}
+
+.cart > span{
+    width: 25px;
+    height: 25px;
+    background-color: var(--hijauMuda);
+    color: var(--biruSatu);
+    border-radius: 50%;
+    align-items: center;
+}
+
+#cart_count{
+    text-align: center;
+    padding: 0 0.9rem 0.1rem 0,9rem;
+    border-radius: 3rem;
+}
+
+/* KONTEN */
+
+.title, .price{
+    color: var(--orange);
+    font-weight: bolder;
+}
+
+.product{
+    border-radius: 5rem;
+}
+
+.cart-items{
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(218,255,244,1) 100%);
+    border: none;
+    width: 40rem;
+}
+
+.plus-minus{
+    color: var(--biruDua);
+    font-size: 25px;
+}
+
+.save{
+    font-size: 12px;
+}
+
+.remove, .alert>ion-icon{
+    font-size: 20px;
+
+}
+
+.stock{
+    font-size: 14px;
+    color: grey;
+}
+
+.logout{
+    background-color: var(--biruDua);
+    width: 100px;
+}
+
+.reset{
+    background-color: transparent;
+    color: var(--biruSatu);
+    border: 0.1rem solid var(--biruSatu);
+    width: 100px;
+}

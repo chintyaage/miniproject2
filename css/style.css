@@ -1,0 +1,249 @@
+:root{
+    --biruSatu: #041657;
+    --biruDua: #1C519B;
+    --biruTiga: #2d71d1;
+    --biruEmpat: #DAFFF4;
+    --biruLima:#75d5f6;
+    --hijauMuda: #BBEEE7;
+    --orange: #EE5D00;
+    --star: #ffe100;
+}
+
+body{
+    background-color: var(--biruLima);
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+/* NAVBAR */
+
+.navbar{
+    backdrop-filter: blur(3px);
+}
+
+#btnNavbar .nav-link::after{
+    content: '';
+    display: block;
+    border-bottom: 0.1rem solid var(--biruSatu);
+    transform: scaleX(0);
+    transition: 0.2s linear;
+}
+
+#btnNavbar .nav-link:hover::after{
+    transform: scaleX(0.6);
+}
+
+#login{
+    width: 100px;
+    background-color: var(--biruSatu);
+    color: white;
+}
+
+#login:hover{
+    background-color: var(--biruDua);
+    transition: 0.3s linear;
+}
+
+.cart{
+    width: 30px;
+    height: 30px;
+    color: var(--biruSatu);
+    fill: none;
+}
+.btn-cart{
+    width: 70px;
+    border: none;
+    background-color: transparent;
+}
+
+.cart > span{
+    width: 25px;
+    height: 25px;
+    background-color: var(--hijauMuda);
+    color: var(--biruSatu);
+    border-radius: 50%;
+    align-items: center;
+}
+
+#cart_count{
+    text-align: center;
+    padding: 0 0.9rem 0.1rem 0,9rem;
+    border-radius: 3rem;
+}
+
+.logout{
+    font-size: 25px;
+    color: var(--biruSatu);
+}
+
+/* JUMBOTRON */
+
+.jumbotron{
+    position: relative;
+    text-align: center;
+    justify-items: center;
+}
+/* cta : call to action */
+.cta{
+    width: 55%;
+    position: absolute;
+    top: 60%;
+}
+
+#shoping{
+    width: 210px;
+    border-radius: 30px;
+    background-color: var(--biruDua);
+    color: white;
+}
+
+#shoping:hover{
+    background-color: var(--biruTiga);
+    transition: 0.3s ease ease-out;
+}
+
+/* ABOUT US */
+
+.slide2, .slide3, .slide4{
+    position: relative;
+    justify-items: center;
+}
+
+.about{
+    width: 80%;
+    position: absolute;
+    top: 10%;
+    text-align: center;
+    color: white;
+    font-style: italic;
+}
+
+.desc{
+    font-style: normal;
+    text-align: justify;
+}
+
+.desc h1{
+    color: var(--orange);
+    font-weight: bolder;
+}
+
+/* Featured Fish Favorites */
+
+.featuredFish{
+    position: absolute;
+    top: 5%;
+}
+
+.title{
+    width: 400px;
+}
+
+h3{
+    color: var(--orange);
+    font-weight: bolder;
+    border-bottom: 0.1rem solid var(--biruSatu);
+}
+
+h5{
+    color: var(--orange);
+    font-weight: bolder;
+    border-bottom: 0.1rem solid var(--biruSatu);
+}
+
+.fav-fish{
+    transition: opacity .5s ease-in-out;
+}
+
+.view-detail{
+    background-color: var(--biruDua);
+    color: white;
+    border: none;
+    border-radius: 30px;
+    width: 125px;
+    padding: .5rem;
+}
+
+.view-detail:hover{
+    background-color: var(--biruTiga);
+    color: white;
+    transition: 0.2s;
+}
+
+.carousel-control-next {
+    margin-left: 10px;
+}
+/* REVIEW */
+
+.review{
+    position: absolute;
+    top: 10%;
+    width: 100%;
+}
+
+.box-review{
+    background-color: var(--hijauMuda);
+    border-radius: 30px;
+    box-shadow: 10px 12px 15px -11px rgba(0,0,0,0.75);
+}
+
+.card{
+    border-radius: 20px;
+    box-shadow: 10px 12px 15px -11px rgba(0,0,0,0.75);
+}
+
+.rev{
+    font-size: 12px;
+}
+
+.rev-star{
+    font-size: 13px;
+    color: var(--star);
+}
+
+.card-text{
+    border-top:  0.1rem solid var(--biruSatu);
+    font-size: 12px;
+}
+
+.btn-star{
+    font-size: 35px;
+    border: none;
+    background-color: transparent;
+    color: var(--star);
+}
+
+/* CONTACT */
+
+.contact-us{
+    color: white;
+}
+
+.icon-contact > a{
+    font-size: 30px;
+    color: white;
+}
+
+#googleMap {
+    border-radius: 20px;
+    border-style: solid;
+}
+
+footer{
+    color: white;
+    background-color: var(--biruDua);
+}
+
+@media (max-width: 450px) {
+  p{
+    font-size: 50%;
+  }
+
+  h1{
+    font-size: 75%;
+  }
+  h3{
+    font-size: 65%;
+  }
+}

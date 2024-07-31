@@ -1,0 +1,202 @@
+:root{
+    --biruSatu: #041657;
+    --biruDua: #1C519B;
+    --biruTiga: #2d71d1;
+    --biruEmpat: #DAFFF4;
+    --biruLima:#75d5f6;
+    --hijauMuda: #BBEEE7;
+    --orange: #EE5D00;
+    --star: #ffe100;
+    --light: #F9F9F9;
+	--blue: #3C91E6;
+	--light-blue: #CFE8FF;
+	--grey: #eee;
+	--dark-grey: #AAAAAA;
+	--red: #DB504A;
+	--yellow: #FFCE26;
+	--light-yellow: #FFF2C6;
+	--light-orange: #FFE0D3;
+}
+
+body{
+    background-color: var(--biruLima);
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+/* NAVBAR */
+
+.navbar{
+    backdrop-filter: blur(3px);
+}
+
+#btnNavbar .nav-link::after{
+    content: '';
+    display: block;
+    border-bottom: 0.1rem solid var(--biruSatu);
+    transform: scaleX(0);
+    transition: 0.2s linear;
+}
+
+#btnNavbar .nav-link:hover::after{
+    transform: scaleX(0.6);
+}
+
+.logout{
+    font-size: 25px;
+    color: var(--biruSatu);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+::selection{
+    color: #fff;
+    background: var(--biruTiga);
+}
+
+::-webkit-scrollbar{
+    width: 3px;
+    border-radius: 25px;
+}
+::-webkit-scrollbar-track{
+    background: var(--biruLima);
+}
+::-webkit-scrollbar-thumb{
+    background: var(--biruDua);
+}
+::-webkit-scrollbar-thumb:hover{
+    background: var(--biruDua);
+}
+
+.wrapper{
+    width: 85%;
+    background-color: rgba(218, 255, 244, 0.3);
+    border-radius: 15px;
+}
+
+
+.wrapper .title{
+    background-color: rgba(28, 81, 155, 0.9);
+    color: #fff;
+    font-weight: 500;
+    line-height: 60px;
+    text-align: center;
+    border-radius: 15px 15px 0 0;
+}
+.wrapper .form{
+    padding: 20px 15px;
+    min-height: 400px;
+    max-height: 400px;
+    overflow-y: auto;
+}
+.wrapper .form .inbox{
+    width: 100%;
+    display: flex;
+    align-items: baseline;
+}
+.wrapper .form .user-inbox{
+    justify-content: flex-end;
+    margin: 13px 0;
+}
+.wrapper .form .inbox .icon{
+    height: 40px;
+    width: 40px;
+    color: #fff;
+    line-height: 40px;
+    border-radius: 50%;
+    font-size: 20px;
+    background-color: var(--biruTiga);
+}
+
+.user-inbox > ion-icon{
+    height: 20px;
+    width: 20px;
+    padding: .5rem;
+    color: var(--dark-grey);
+    line-height: 40px;
+    border-radius: 50%;
+    background-color: var(--grey);
+    margin-left: .6rem;
+}
+
+.wrapper .form .inbox .msg-header{
+    max-width: 70%;
+    margin-left: 10px;
+}
+.form .inbox .msg-header p{
+    color: white;
+    background-color: var(--biruTiga);
+    border-radius: 10px;
+    padding: 8px 10px;
+    font-size: 12px;
+    word-break: break-all;
+}
+.form .user-inbox .msg-header p{
+    color: #333;
+    background: #efefef;
+}
+
+.typing-field{
+    display: flex;
+    height: 60px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 0 0 15px 15px;
+}
+.wrapper .typing-field .input-data{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+.wrapper .typing-field .input-data input{
+    color: white;
+    height: 100%;
+    width: 100%;
+    outline: none;
+    padding: 0 80px 0 15px;
+    font-size: 13px;
+    background-color: rgba(28, 81, 155, 0.8);
+    border: none;
+    border-bottom: 0.1rem solid var(--biruSatu);
+    transition: all 0.3s ease;
+}
+
+.input-data input::placeholder{
+    color: #e1e1e1;
+    transition: all 0.3s ease;
+}
+
+.input-data input:focus::placeholder{
+    color: #aaa9a9;
+}
+.wrapper .typing-field .input-data button{
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    width: 80px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+    opacity: 0;
+    pointer-events: none;
+    border-radius: 8px;
+    background: var(--biruSatu);
+    border: none;
+    transform: translateY(-50%);
+    transition: all 0.3s ease;
+}
+.wrapper .typing-field .input-data input:valid ~ button{
+    opacity: 1;
+    pointer-events: auto;
+}
+.typing-field .input-data button:hover{
+    background: var(--biruTiga);
+}

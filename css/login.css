@@ -1,0 +1,76 @@
+:root{
+    --biruSatu: #041657;
+    --biruDua: #1C519B;
+    --biruTiga: #2d71d1;
+    --biruEmpat: #DAFFF4;
+    --biruLima:#75d5f6;
+    --hijauMuda: #BBEEE7;
+    --orange: #EE5D00;
+    --star: #ffe100;
+}
+
+
+body{
+    background-color: var(--hijauMuda);
+    color: var(--biruSatu);
+    font-family: "Poppins", sans-serif;
+    font-size: 13px;
+    box-sizing: border-box;
+}
+
+.form-container{
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(117,213,246,1) 100%);
+    border-radius: 10px;
+    box-shadow: 11px 15px 14px -9px rgba(0,0,0,0.75);
+}
+
+.form-control{
+    font-size: 13px;
+    background-color:  rgba(117,213,246,0.3);
+    border: none;
+    border-radius: 0;
+    border-bottom: 0.1rem solid var(--biruSatu);
+}
+
+.form-label{
+    font-weight: bold;
+}
+
+.btn-primary{
+    width: 90%;
+    background-color: var(--biruDua);
+    border: none;
+    font-size: 15px;
+}
+
+.btn-primary:hover{
+    background-color: var(--biruSatu);
+}
+
+.btn-cancel{
+    width: 90%;
+    border: 0.09rem solid var(--biruSatu);
+    font-size: 15px;
+}
+
+.btn-cancel:hover{
+    background-color: var(--hijauMuda);
+}
+
+.text-warning{
+    color: var(--orange);
+    border: none;
+    font-weight: bolder;
+    background-color: transparent;
+}
+
+.text-warning:hover, .btn_admin:hover{
+    text-decoration: underline;
+}
+
+.btn_admin{
+    color: var(--biruDua);
+    border: none;
+    font-weight: bolder;
+    background-color: transparent;
+}
